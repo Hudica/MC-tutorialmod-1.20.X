@@ -1,6 +1,7 @@
 package net.hudica.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.hudica.tutorialmod.block.ModBlocks;
 import net.hudica.tutorialmod.item.ModCreativeModTabs;
 import net.hudica.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
@@ -27,6 +28,7 @@ public class TutorialMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModCreativeModTabs.register(modEventBus);
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);

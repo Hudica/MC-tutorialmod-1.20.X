@@ -1,6 +1,7 @@
 package net.hudica.tutorialmod.item;
 
 import net.hudica.tutorialmod.TutorialMod;
+import net.hudica.tutorialmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -23,6 +24,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(Items.DIAMOND);
                         pOutput.accept(Items.IRON_INGOT);
                         pOutput.accept(Items.CHAIN_COMMAND_BLOCK);
+                        pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
+                        pOutput.accept(Items.ENDER_CHEST);
                     })
                     .build());
 
